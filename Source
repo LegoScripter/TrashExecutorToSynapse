@@ -15,3 +15,8 @@ getgenv().syn_request = syn and syn.request or http and http.request or http_req
 		}
 	end
 end  
+oldendentify = identifyexecutor()
+
+getgenv().identifyexecutor = function(file)
+    return 'Synapse'
+end
